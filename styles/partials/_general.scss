@@ -21,6 +21,21 @@ body {
   min-height: 100vh;
 }
 
+.body__bg--glass,
+.body__bg--lionsgate {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+
+.body__bg--glass {
+  background-image: url("./../assets/vincent-guth-unsplash.jpg");
+}
+
+.body__bg--lionsgate {
+  background-image: url("./../assets/lions-gate-bridge-by-lee-robinson-unsplash.jpg");
+}
+
 // Utility class that can be extended
 .container {
   width: 90%;
