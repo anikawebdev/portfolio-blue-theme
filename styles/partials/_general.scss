@@ -25,17 +25,22 @@ body {
 .body__bg--lionsgate {
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: right;
 }
 
 .body__bg--glass {
   background-image: url("./../assets/vincent-guth-unsplash.jpg");
+  background-position: right;
 }
 
 .body__bg--lionsgate {
   background-image: url("./../assets/lions-gate-bridge-by-lee-robinson-unsplash.jpg");
-  background-size: 50% 100vh;
-  background-color: $blue-bg;
+  background-position: center;
+
+  @include tablet {
+    background-size: 50% 100vh;
+    background-color: $blue-bg;
+    background-position: right;
+  }
 }
 
 // Utility class that can be extended

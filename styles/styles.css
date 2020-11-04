@@ -369,17 +369,24 @@ body {
 .body__bg--lionsgate {
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: right;
 }
 
 .body__bg--glass {
   background-image: url("./../assets/vincent-guth-unsplash.jpg");
+  background-position: right;
 }
 
 .body__bg--lionsgate {
   background-image: url("./../assets/lions-gate-bridge-by-lee-robinson-unsplash.jpg");
-  background-size: 50% 100vh;
-  background-color: rgba(1, 217, 255, 0.1);
+  background-position: center;
+}
+
+@media all and (min-width: 750px) {
+  .body__bg--lionsgate {
+    background-size: 50% 100vh;
+    background-color: rgba(1, 217, 255, 0.1);
+    background-position: right;
+  }
 }
 
 .container {
