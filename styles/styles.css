@@ -421,4 +421,37 @@ header {
   height: 8vh;
   font-weight: 700;
 }
+
+@media all and (min-width: 1000px) {
+  .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: inherit;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media all and (min-width: 1000px) {
+  .mobile {
+    display: none;
+  }
+}
+
+.full {
+  display: none;
+}
+
+@media all and (min-width: 1000px) {
+  .full {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 /*# sourceMappingURL=styles.css.map */

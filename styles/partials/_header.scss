@@ -8,3 +8,26 @@ header {
   height: 8vh;
   font-weight: 700;
 }
+
+.nav {
+  @include tablet-larger-bp {
+    display: flex;
+    height: inherit;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.mobile {
+  @include tablet-larger-bp {
+    display: none;
+  }
+}
+
+.full {
+  display: none;
+
+  @include tablet-larger-bp {
+    display: flex;
+  }
+}
