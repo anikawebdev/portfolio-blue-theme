@@ -1,12 +1,17 @@
 header {
   width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .header {
+  position: fixed;
   display: flex;
   justify-content: space-between;
   height: 10vh;
   font-weight: 700;
+  z-index: 100;
 }
 
 .logo {
@@ -16,6 +21,8 @@ header {
 }
 
 .nav {
+  position: relative;
+
   @include tablet-larger-bp {
     display: flex;
     height: inherit;
@@ -28,6 +35,20 @@ header {
   @include tablet-larger-bp {
     display: none;
   }
+}
+
+.mobile__ham {
+  position: absolute;
+  top: 2.5vh;
+  right: 0;
+  z-index: 100;
+  width: 35px;
+  height: 35px;
+  background-image: url("./../assets/icons8-menu-50.png");
+  background-color: transparent;
+  background-size: 100%;
+  border: none;
+  cursor: pointer;
 }
 
 .full {

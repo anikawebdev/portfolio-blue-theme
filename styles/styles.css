@@ -409,9 +409,17 @@ body {
 
 header {
   width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .header {
+  position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -420,6 +428,7 @@ header {
           justify-content: space-between;
   height: 10vh;
   font-weight: 700;
+  z-index: 100;
 }
 
 .logo {
@@ -432,6 +441,10 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.nav {
+  position: relative;
 }
 
 @media all and (min-width: 1000px) {
@@ -453,6 +466,20 @@ header {
   .mobile {
     display: none;
   }
+}
+
+.mobile__ham {
+  position: absolute;
+  top: 2.5vh;
+  right: 0;
+  z-index: 100;
+  width: 35px;
+  height: 35px;
+  background-image: url("./../assets/icons8-menu-50.png");
+  background-color: transparent;
+  background-size: 100%;
+  border: none;
+  cursor: pointer;
 }
 
 .full {
