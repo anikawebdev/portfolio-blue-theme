@@ -406,4 +406,19 @@ body {
     width: 80%;
   }
 }
+
+header {
+  width: 100%;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 8vh;
+  font-weight: 700;
+}
 /*# sourceMappingURL=styles.css.map */
