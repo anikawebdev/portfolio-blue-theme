@@ -1,0 +1,36 @@
+@import "./variable";
+
+// Smaller mobile width < 500px
+@mixin mobile-smaller {
+  @media all and (max-width: $mobile-larger-bp) {
+    @content;
+  }
+}
+
+// Larger mobile 500px < width < 750px
+@mixin mobile-larger-bp {
+  @media all and (min-width: $mobile-larger-bp) {
+    @content;
+  }
+}
+
+// Tablet 750px < width < 1000px
+@mixin tablet {
+  @media all and (min-width: $tablet-bp) {
+    @content;
+  }
+}
+
+// Tablet 100px < width < 1440px
+@mixin tablet-larger-bp {
+  @media all and (min-width: $tablet-larger-bp) {
+    @content;
+  }
+}
+
+// Desktop 1440px < width
+@mixin desktop {
+  @media screen and (min-width: $desktop-bp) {
+    @content;
+  }
+}

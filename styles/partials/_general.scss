@@ -1,0 +1,37 @@
+html {
+  margin: 0 auto;
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family-primary, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: lighten($black, 25%);
+  width: 100%;
+  text-rendering: optimizeLegibility;
+  height: 100vh;
+  min-height: 100vh;
+}
+
+// Utility class that can be extended
+.container {
+  width: 90%;
+  max-width: $desktop-bp;
+  margin: 0 auto;
+
+  @include tablet {
+    width: 85%;
+  }
+
+  @include desktop {
+    width: 80%;
+  }
+}
