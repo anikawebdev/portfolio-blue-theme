@@ -34,6 +34,8 @@ body {
 
 .body__bg--lionsgate {
   background-image: url("./../assets/lions-gate-bridge-by-lee-robinson-unsplash.jpg");
+  background-size: 50% 100vh;
+  background-color: $blue-bg;
 }
 
 // Utility class that can be extended
