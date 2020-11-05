@@ -524,17 +524,17 @@ header {
 
 @media all and (min-width: 750px) {
   .mobile__navbar {
-    left: -9%;
+    left: -8.8%;
   }
 }
 
 .mobile__navbar-link,
 .mobile__navbar-link:visited {
-  color: #ffbf00;
+  color: #d1ab00;
 }
 
 .mobile__navbar ul {
-  padding: 0;
+  margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -549,7 +549,19 @@ header {
       -ms-flex-align: center;
           align-items: center;
   width: inherit;
-  font-size: 3rem;
+  font-size: 2rem;
+}
+
+@media all and (min-width: 375px) {
+  .mobile__navbar ul {
+    font-size: 2.5rem;
+  }
+}
+
+@media all and (min-width: 750px) {
+  .mobile__navbar ul {
+    font-size: 3rem;
+  }
 }
 
 .showMobileNavbar {
