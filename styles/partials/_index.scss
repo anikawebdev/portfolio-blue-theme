@@ -1,0 +1,101 @@
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 5rem;
+
+  @include mobile-larger-bp {
+    font-size: 6rem;
+    letter-spacing: 5px;
+  }
+
+  @include tablet {
+    font-size: 12rem;
+  }
+
+  @include tablet-larger-bp {
+    font-size: 15rem;
+  }
+}
+
+h2 {
+  padding: 0;
+  margin: 0;
+  font-size: 3rem;
+
+  @include mobile-larger-bp {
+    font-size: 3.5rem;
+    letter-spacing: 5px;
+  }
+
+  @include tablet {
+    font-size: 6rem;
+    letter-spacing: 15px;
+  }
+
+  @include tablet-larger-bp {
+    font-size: 8rem;
+  }
+}
+
+.donut {
+  width: 40px;
+
+  @include mobile-larger-bp {
+    width: 45px;
+  }
+
+  @include tablet {
+    width: 75px;
+  }
+
+  @include tablet-larger-bp {
+    width: 95px;
+  }
+}
+
+.title {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 400%;
+
+  @include mobile-larger-bp {
+    line-height: 475%;
+  }
+
+  @include tablet {
+    line-height: 800%;
+  }
+
+  @include tablet-larger-bp {
+    line-height: 1000%;
+  }
+}
+
+.description {
+  font-size: 1.5rem;
+  line-height: 150%;
+  width: 250px;
+
+  @include mobile-larger-bp {
+    font-size: 2rem;
+    width: 300px;
+  }
+
+  @include tablet {
+    font-size: 3.5rem;
+    width: 500px;
+  }
+
+  @include tablet-larger-bp {
+    font-size: 5rem;
+    width: 700px;
+  }
+
+  @include desktop {
+    width: 700px;
+  }
+}
