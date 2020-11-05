@@ -361,7 +361,6 @@ body {
   color: #404040;
   width: 100%;
   text-rendering: optimizeLegibility;
-  height: 100vh;
   min-height: 100vh;
 }
 
@@ -387,6 +386,19 @@ body {
     background-color: rgba(1, 217, 255, 0.1);
     background-position: right;
   }
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #404040;
+}
+
+a:visited {
+  color: #404040;
 }
 
 .container {
@@ -441,25 +453,32 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 100;
 }
 
 .nav {
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: inherit;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-@media all and (min-width: 1000px) {
-  .nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    height: inherit;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
+.mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media all and (min-width: 1000px) {
@@ -469,17 +488,73 @@ header {
 }
 
 .mobile__ham {
-  position: absolute;
-  top: 2.5vh;
-  right: 0;
   z-index: 100;
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   background-image: url("./../assets/icons8-menu-50.png");
   background-color: transparent;
   background-size: 100%;
   border: none;
   cursor: pointer;
+}
+
+.mobile__close {
+  background-image: url("./../assets/icons8-multiply-50.png");
+}
+
+.mobile__navbar {
+  position: absolute;
+  top: 0;
+  left: -5.5%;
+  background: url("./../assets/eberhard-grossgasteiger-unsplash.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media all and (min-width: 750px) {
+  .mobile__navbar {
+    left: -9%;
+  }
+}
+
+.mobile__navbar-link,
+.mobile__navbar-link:visited {
+  color: #ffbf00;
+}
+
+.mobile__navbar ul {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: inherit;
+  font-size: 3rem;
+}
+
+.showMobileNavbar {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .full {
