@@ -506,7 +506,7 @@ header {
   position: absolute;
   top: 0;
   left: -5.5%;
-  background: url("./../assets/eberhard-grossgasteiger-unsplash.jpg");
+  background: #cef8ff;
   background-size: cover;
   width: 100vw;
   height: 100vh;
@@ -520,6 +520,12 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media all and (min-width: 750px) {
@@ -528,13 +534,7 @@ header {
   }
 }
 
-.mobile__navbar-link,
-.mobile__navbar-link:visited {
-  color: #d1ab00;
-}
-
 .mobile__navbar ul {
-  margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -549,18 +549,19 @@ header {
       -ms-flex-align: center;
           align-items: center;
   width: inherit;
-  font-size: 2rem;
+  height: 50vh;
+  font-size: 1.5rem;
 }
 
 @media all and (min-width: 375px) {
   .mobile__navbar ul {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 
 @media all and (min-width: 750px) {
   .mobile__navbar ul {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 }
 
