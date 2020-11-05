@@ -456,12 +456,6 @@ header {
   }
 }
 
-@media all and (min-width: 1000px) {
-  .header {
-    font-size: 2.5rem;
-  }
-}
-
 .logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -473,6 +467,12 @@ header {
       -ms-flex-align: center;
           align-items: center;
   z-index: 100;
+}
+
+.logo a:hover, .logo a:active {
+  color: #ff0266;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
 }
 
 .nav {
@@ -569,18 +569,19 @@ header {
           align-items: center;
   width: inherit;
   height: 50vh;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+  font-weight: 400;
 }
 
 @media all and (min-width: 375px) {
   .mobile__navbar ul {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 }
 
 @media all and (min-width: 750px) {
   .mobile__navbar ul {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
   }
 }
 
@@ -599,5 +600,30 @@ header {
     display: -ms-flexbox;
     display: flex;
   }
+}
+
+.full__navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.5rem;
+  font-weight: 400;
+  width: 450px;
+}
+
+.mobile__navbar-link,
+.full__navbar-link {
+  padding-bottom: 5px;
+}
+
+.mobile__navbar-link:hover, .mobile__navbar-link:active,
+.full__navbar-link:hover,
+.full__navbar-link:active {
+  border-bottom: 5px solid #ffde03;
+  -webkit-transition: border-bottom 0.2s;
+  transition: border-bottom 0.2s;
 }
 /*# sourceMappingURL=styles.css.map */
