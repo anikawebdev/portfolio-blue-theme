@@ -419,6 +419,35 @@ a:visited {
   }
 }
 
+.appear {
+  -webkit-animation: textappear 5s ease-in-out;
+          animation: textappear 5s ease-in-out;
+}
+
+@-webkit-keyframes textappear {
+  0% {
+    color: transparent;
+  }
+  50% {
+    color: #ff0266;
+  }
+  100% {
+    color: #404040;
+  }
+}
+
+@keyframes textappear {
+  0% {
+    color: transparent;
+  }
+  50% {
+    color: #ff0266;
+  }
+  100% {
+    color: #404040;
+  }
+}
+
 .rotate {
   -webkit-animation: rotation 3s infinite linear;
           animation: rotation 3s infinite linear;
@@ -654,53 +683,90 @@ header {
   transition: border-bottom 0.2s;
 }
 
-h1 {
+.index {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  line-height: 400%;
+}
+
+@media all and (min-width: 375px) {
+  .index {
+    line-height: 475%;
+  }
+}
+
+@media all and (min-width: 750px) {
+  .index {
+    line-height: 800%;
+  }
+}
+
+@media all and (min-width: 1000px) {
+  .index {
+    line-height: 1000%;
+  }
+}
+
+.index h1 {
   margin: 0;
   padding: 0;
   font-size: 5rem;
 }
 
 @media all and (min-width: 375px) {
-  h1 {
+  .index h1 {
     font-size: 6rem;
     letter-spacing: 5px;
   }
 }
 
 @media all and (min-width: 750px) {
-  h1 {
+  .index h1 {
     font-size: 12rem;
   }
 }
 
 @media all and (min-width: 1000px) {
-  h1 {
+  .index h1 {
     font-size: 15rem;
   }
 }
 
-h2 {
+.index h2 {
   padding: 0;
   margin: 0;
   font-size: 3rem;
 }
 
 @media all and (min-width: 375px) {
-  h2 {
+  .index h2 {
     font-size: 3.5rem;
     letter-spacing: 5px;
   }
 }
 
 @media all and (min-width: 750px) {
-  h2 {
+  .index h2 {
     font-size: 6rem;
     letter-spacing: 15px;
   }
 }
 
 @media all and (min-width: 1000px) {
-  h2 {
+  .index h2 {
     font-size: 8rem;
   }
 }
@@ -724,43 +790,6 @@ h2 {
 @media all and (min-width: 1000px) {
   .donut {
     width: 95px;
-  }
-}
-
-.title {
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  line-height: 400%;
-}
-
-@media all and (min-width: 375px) {
-  .title {
-    line-height: 475%;
-  }
-}
-
-@media all and (min-width: 750px) {
-  .title {
-    line-height: 800%;
-  }
-}
-
-@media all and (min-width: 1000px) {
-  .title {
-    line-height: 1000%;
   }
 }
 

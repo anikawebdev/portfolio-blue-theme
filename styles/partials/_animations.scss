@@ -1,4 +1,21 @@
 // landing page text appearance
+.appear {
+  animation: textappear 5s ease-in-out;
+}
+
+@keyframes textappear {
+  0% {
+    color: transparent;
+  }
+
+  50% {
+    color: $pink;
+  }
+
+  100% {
+    color: lighten($black, 25%);
+  }
+}
 
 // donut rotation
 .rotate {

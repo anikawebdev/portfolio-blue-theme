@@ -1,4 +1,26 @@
-h1 {
+.index {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 400%;
+
+  @include mobile-larger-bp {
+    line-height: 475%;
+  }
+
+  @include tablet {
+    line-height: 800%;
+  }
+
+  @include tablet-larger-bp {
+    line-height: 1000%;
+  }
+}
+
+.index h1 {
   margin: 0;
   padding: 0;
   font-size: 5rem;
@@ -17,7 +39,7 @@ h1 {
   }
 }
 
-h2 {
+.index h2 {
   padding: 0;
   margin: 0;
   font-size: 3rem;
@@ -50,28 +72,6 @@ h2 {
 
   @include tablet-larger-bp {
     width: 95px;
-  }
-}
-
-.title {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  line-height: 400%;
-
-  @include mobile-larger-bp {
-    line-height: 475%;
-  }
-
-  @include tablet {
-    line-height: 800%;
-  }
-
-  @include tablet-larger-bp {
-    line-height: 1000%;
   }
 }
 
