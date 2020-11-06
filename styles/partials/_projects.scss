@@ -6,14 +6,15 @@
 }
 
 .projects img {
-  width: 250px;
+  width: 200px;
   height: auto;
+
   @include mobile-larger-bp {
-    width: 300px;
+    width: 250px;
   }
 
   @include tablet {
-    width: 450px;
+    width: 425px;
   }
 
   @include tablet-larger-bp {
@@ -66,8 +67,10 @@
 
 .projects-info .github {
   width: 50px;
+  margin-right: 5px;
 }
 
 .projects-info .live {
-  width: 49px;
+  width: 48px;
+  margin-left: 5px;
 }
