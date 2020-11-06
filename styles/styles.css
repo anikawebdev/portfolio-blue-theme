@@ -361,7 +361,6 @@ body {
   color: #404040;
   width: 100%;
   text-rendering: optimizeLegibility;
-  min-height: 100vh;
   height: auto;
 }
 
