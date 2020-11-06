@@ -986,4 +986,12 @@ header {
     width: 300px;
   }
 }
+
+.projects-info .github {
+  width: 50px;
+}
+
+.projects-info .live {
+  width: 49px;
+}
 /*# sourceMappingURL=styles.css.map */
