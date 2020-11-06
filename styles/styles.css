@@ -911,7 +911,13 @@ header {
 
 @media all and (min-width: 750px) {
   .projects img {
-    width: 600px;
+    width: 450px;
+  }
+}
+
+@media all and (min-width: 1000px) {
+  .projects img {
+    width: 745px;
   }
 }
 
@@ -926,13 +932,21 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+}
+
+@media screen and (min-width: 1440px) {
+  .carousel-cell {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .carousel-cell__mobile {
@@ -961,5 +975,15 @@ header {
 
 .projects span {
   line-height: 150%;
+}
+
+.projects p {
+  width: 250px;
+}
+
+@media all and (min-width: 375px) {
+  .projects p {
+    width: 300px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

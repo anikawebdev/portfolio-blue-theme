@@ -1,81 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="./assets/yellow-favicon-trim.svg" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles/flickity.css">
+    <link rel="stylesheet" href="./styles/flickity.css" />
     <link rel="stylesheet" href="./styles/styles.css" />
     <title>Anika &verbar; Vancouver&dash;based developer</title>
-</head>
-<body>
-  <header>
-    <div class="header container">
-      <div class="logo">
-        <a href="./index.html">anikacustod&period;io</a>
-      </div>
-      <div class="nav">
-        <div class="mobile">
-          <button class="mobile__ham"></button>
-          <nav class="mobile__navbar">
-            <ul>
-              <li><a class="mobile__navbar-link" href="./index.html">home</a></li>
-              <li><a class="mobile__navbar-link" href="./about.html">about</a></li>
-              <li><a class="mobile__navbar-link" href="./projects.html">projects</a></li>
-              <li><a class="mobile__navbar-link" href="./contact.html">contact</a></li>
-            </ul>
-          </nav>
+  </head>
+  <body>
+    <header>
+      <div class="header container">
+        <div class="logo">
+          <a href="./index.html">anikacustod&period;io</a>
         </div>
-        <div class="full">
-          <nav class="full__navbar">
-            <ul>
-              <li><a class="full__navbar-link" href="./index.html">home</a></li>
-              <li><a class="full__navbar-link" href="./about.html">about</a></li>
-              <li><a class="full__navbar-link" href="./projects.html">projects</a></li>
-              <li><a class="full__navbar-link" href="./contact.html">contact</a></li>
-            </ul>
-          </nav>
+        <div class="nav">
+          <div class="mobile">
+            <button class="mobile__ham"></button>
+            <nav class="mobile__navbar">
+              <ul>
+                <li>
+                  <a class="mobile__navbar-link" href="./index.html">home</a>
+                </li>
+                <li>
+                  <a class="mobile__navbar-link" href="./about.html">about</a>
+                </li>
+                <li>
+                  <a class="mobile__navbar-link" href="./projects.html"
+                    >projects</a
+                  >
+                </li>
+                <li>
+                  <a class="mobile__navbar-link" href="./contact.html"
+                    >contact</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="full">
+            <nav class="full__navbar">
+              <ul>
+                <li>
+                  <a class="full__navbar-link" href="./index.html">home</a>
+                </li>
+                <li>
+                  <a class="full__navbar-link" href="./about.html">about</a>
+                </li>
+                <li>
+                  <a class="full__navbar-link" href="./projects.html"
+                    >projects</a
+                  >
+                </li>
+                <li>
+                  <a class="full__navbar-link" href="./contact.html">contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="title body__bg--glass">
+      <h1 class="appear">
+        pr<img
+          class="donut rotate"
+          src="./assets/yellow-donut.png"
+          alt="yellow donut"
+        />jects
+      </h1>
+    </main>
+    <div id="projects" class="projects">
+      <div class="main-carousel container">
+        <div class="carousel-cell">
+          <img
+            class="carousel-cell__mobile"
+            src="./assets/bandsite-mobile.png"
+            alt="bandsite"
+          />
+          <img
+            class="carousel-cell__full"
+            src="./assets/bandsite-shows.png"
+            alt="bandsite"
+          />
+          <div>
+            <h2>bandsite</h2>
+            <p>
+              <span>
+                This is a bandsite built using html5, css3, scss and
+                javascript
+              </span>
+            </p>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <img
+            class="carousel-cell__mobile"
+            src="./assets/brainflix-mobile.png"
+            alt="brainflix"
+          />
+          <img
+            class="carousel-cell__full"
+            src="./assets/brainflix.png"
+            alt="brainflix"
+          />
+          <div>
+            <h2>brainflix</h2>
+            <p>
+              <span>
+                This is a youtube clone built using html5, css3, scss,
+                javascript, react, node and express
+              </span>
+            </p>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <img
+            class="carousel-cell__mobile"
+            src="./assets/moneyhack-mobile.png"
+            alt="money hack"
+          />
+          <img
+            class="carousel-cell__full"
+            src="./assets/money-hack.png"
+            alt="money hack"
+          />
+          <div>
+            <h2>money hack</h2>
+            <p>
+              <span>
+                This is a budgeting web app built using html5, css3, scss,
+                javascript, react, node and express
+              </span>
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </header>
-  <main class="title body__bg--glass">
-    <h1 class="appear">pr<img class="donut rotate" src="./assets/yellow-donut.png" alt="yellow donut">jects</h1>
-  </main>
-  <div id="projects" class="projects">
-    <div class="main-carousel container">
-      <div class="carousel-cell">
-        <img class="carousel-cell__mobile" src="./assets/bandsite-mobile.png" alt="bandsite">
-        <img class="carousel-cell__full" src="./assets/bandsite-shows.png" alt="bandsite">
-        <h2>bandsite</h2>
-        <p>
-          <span>This is a bandsite built using html5, css3, scss and javascript</span>
-        </p>
-      </div>
-      <div class="carousel-cell">
-        <img class="carousel-cell__mobile" src="./assets/brainflix-mobile.png" alt="brainflix">
-        <img class="carousel-cell__full" src="./assets/brainflix.png" alt="brainflix">
-        <h2>brainflix</h2>
-        <p>
-          <span>This is a youtube clone built using html5, css3, scss, javascript, react, node and express</span>          
-        </p>
-      </div>
-      <div class="carousel-cell">
-        <img class="carousel-cell__mobile" src="./assets/moneyhack-mobile.png" alt="money hack">
-        <img class="carousel-cell__full" src="./assets/money-hack.png" alt="money hack">
-        <h2>money hack</h2>
-        <p>
-          <span>This is a budgeting web app built using html5, css3, scss, javascript, react, node and express</span>          
-        </p>
-      </div>
-    </div>
-  </div>
-  <script src="./scripts/mobileMenu.js"></script>
-  <script src="./scripts/flickity.js"></script>
-  <script src="./scripts/initializeCarousel.js"></script> 
-</body>
+    <script src="./scripts/mobileMenu.js"></script>
+    <script src="./scripts/flickity.js"></script>
+    <script src="./scripts/initializeCarousel.js"></script>
+  </body>
 </html>
