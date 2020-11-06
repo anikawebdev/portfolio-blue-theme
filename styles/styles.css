@@ -935,6 +935,30 @@ header {
   text-align: center;
 }
 
+.carousel-cell__mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media all and (min-width: 1000px) {
+  .carousel-cell__mobile {
+    display: none;
+  }
+}
+
+.carousel-cell__full {
+  display: none;
+}
+
+@media all and (min-width: 1000px) {
+  .carousel-cell__full {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .projects span {
   line-height: 150%;
 }

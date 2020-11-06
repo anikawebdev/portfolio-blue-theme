@@ -28,6 +28,22 @@
   text-align: center;
 }
 
+.carousel-cell__mobile {
+  display: flex;
+
+  @include tablet-larger-bp {
+    display: none;
+  }
+}
+
+.carousel-cell__full {
+  display: none;
+
+  @include tablet-larger-bp {
+    display: flex;
+  }
+}
+
 .projects span {
   line-height: 150%;
 }
