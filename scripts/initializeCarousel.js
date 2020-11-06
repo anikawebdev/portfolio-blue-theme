@@ -6,8 +6,8 @@ document.addEventListener("DOMContentLoaded", function() {
      */
   
     // add carousel js
-    var elem = document.querySelector(".main-carousel");
-    var flkty = new Flickity(elem, {
+    let elem = document.querySelector(".main-carousel");
+    let flkty = new Flickity(elem, {
       // options
       cellAlign: "center",
       contain: true,
