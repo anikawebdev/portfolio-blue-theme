@@ -362,6 +362,7 @@ body {
   width: 100%;
   text-rendering: optimizeLegibility;
   min-height: 100vh;
+  height: auto;
 }
 
 .body__bg--glass,
@@ -824,5 +825,119 @@ header {
   .description {
     width: 700px;
   }
+}
+
+.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.title h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 3rem;
+}
+
+@media all and (min-width: 375px) {
+  .title h1 {
+    font-size: 3.5rem;
+    letter-spacing: 5px;
+  }
+}
+
+@media all and (min-width: 750px) {
+  .title h1 {
+    font-size: 6rem;
+  }
+}
+
+@media all and (min-width: 1000px) {
+  .title h1 {
+    font-size: 8rem;
+  }
+}
+
+.title img {
+  width: 35px;
+}
+
+@media all and (min-width: 375px) {
+  .title img {
+    width: 45px;
+  }
+}
+
+@media all and (min-width: 750px) {
+  .title img {
+    width: 70px;
+  }
+}
+
+@media all and (min-width: 1000px) {
+  .title img {
+    width: 90px;
+  }
+}
+
+.projects {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projects img {
+  width: 250px;
+  height: auto;
+}
+
+@media all and (min-width: 375px) {
+  .projects img {
+    width: 300px;
+  }
+}
+
+@media all and (min-width: 750px) {
+  .projects img {
+    width: 600px;
+  }
+}
+
+.carousel-cell {
+  width: 95%;
+  padding: 10px;
+  height: 75vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.projects span {
+  line-height: 150%;
 }
 /*# sourceMappingURL=styles.css.map */
