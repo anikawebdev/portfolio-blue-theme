@@ -380,7 +380,7 @@ body {
   background-position: center;
 }
 
-@media all and (min-width: 750px) {
+@media screen and (min-width: 1440px) {
   .body__bg--lionsgate {
     background-size: 50% 100vh;
     background-color: rgba(1, 217, 255, 0.1);
@@ -996,5 +996,103 @@ header {
 .projects-info .live {
   width: 48px;
   margin-left: 5px;
+}
+
+.contact {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact__content {
+  height: 75vh;
+  background: rgba(255, 255, 255, 0.65);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 15px;
+  font-size: 1rem;
+}
+
+@media all and (min-width: 375px) {
+  .contact__content {
+    font-size: 1.25rem;
+  }
+}
+
+@media all and (min-width: 750px) {
+  .contact__content {
+    font-size: 1.75rem;
+    padding: 75px;
+  }
+}
+
+.contact p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 150%;
+}
+
+.contact a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: none;
+  border-radius: 30px;
+  background: #ff0266;
+  width: 250px;
+  height: 50px;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffde03;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin: 0 auto;
+}
+
+@media all and (min-width: 375px) {
+  .contact a {
+    height: 55px;
+  }
+}
+
+@media all and (min-width: 750px) {
+  .contact a {
+    width: 350px;
+    height: 75px;
+    border-radius: 40px;
+  }
+}
+
+.contact a:hover,
+.contact a:active {
+  background: linear-gradient(113.73094deg, #30f5fb 5.10045%, #178ecb 97.51116%);
+  -webkit-transition: background 0.2s;
+  transition: background 0.2s;
+}
+
+.label {
+  font-weight: 700;
 }
 /*# sourceMappingURL=styles.css.map */

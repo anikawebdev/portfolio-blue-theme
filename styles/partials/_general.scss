@@ -35,7 +35,7 @@ body {
   background-image: url("./../assets/lions-gate-bridge-by-lee-robinson-unsplash.jpg");
   background-position: center;
 
-  @include tablet {
+  @include desktop {
     background-size: 50% 100vh;
     background-color: $blue-bg;
     background-position: right;
