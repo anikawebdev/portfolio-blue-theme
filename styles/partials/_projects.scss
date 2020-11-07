@@ -18,7 +18,7 @@
   }
 
   @include tablet-larger-bp {
-    width: 745px;
+    width: 700px;
   }
 }
 
@@ -72,9 +72,9 @@
 .projects h2 {
   margin-bottom: 10px;
 
-  @include tablet-larger-bp {
-    margin-bottom: 25px;
-  }
+  // @include tablet-larger-bp {
+  //   margin-bottom: 15px;
+  // }
 }
 
 .projects-info {
@@ -82,9 +82,9 @@
     font-size: 1.5rem;
   }
 
-  @include tablet-larger-bp {
-    font-size: 2rem;
-  }
+  // @include tablet-larger-bp {
+  //   font-size: 2rem;
+  // }
 }
 
 .projects-info .github {

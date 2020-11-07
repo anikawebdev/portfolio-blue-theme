@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="./assets/yellow-favicon-trim.svg" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
@@ -10,41 +10,81 @@
     />
     <link rel="stylesheet" href="./styles/styles.css" />
     <title>Anika &verbar; Vancouver&dash;based developer</title>
-</head>
-<body>
-  <header>
-    <div class="header container">
-      <div class="logo">
-        <a href="./index.html">anikacustod&period;io</a>
+  </head>
+  <body>
+    <header>
+      <div class="header container">
+        <div class="logo">
+          <a href="./index.html">anikacustod&period;io</a>
+        </div>
+        <div class="nav">
+          <div class="mobile">
+            <button class="mobile__ham"></button>
+            <nav class="mobile__navbar">
+              <ul>
+                <li>
+                  <a class="mobile__navbar-link" href="./index.html">home</a>
+                </li>
+                <li>
+                  <a class="mobile__navbar-link" href="./about.html">about</a>
+                </li>
+                <li>
+                  <a class="mobile__navbar-link" href="./projects.html"
+                    >projects</a
+                  >
+                </li>
+                <li>
+                  <a class="mobile__navbar-link" href="./contact.html"
+                    >contact</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="full">
+            <nav class="full__navbar">
+              <ul>
+                <li>
+                  <a class="full__navbar-link" href="./index.html">home</a>
+                </li>
+                <li>
+                  <a class="full__navbar-link" href="./about.html">about</a>
+                </li>
+                <li>
+                  <a class="full__navbar-link" href="./projects.html"
+                    >projects</a
+                  >
+                </li>
+                <li>
+                  <a class="full__navbar-link" href="./contact.html">contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
       </div>
-      <div class="nav">
-        <div class="mobile">
-          <button class="mobile__ham"></button>
-          <nav class="mobile__navbar">
-            <ul>
-              <li><a class="mobile__navbar-link" href="./index.html">home</a></li>
-              <li><a class="mobile__navbar-link" href="./about.html">about</a></li>
-              <li><a class="mobile__navbar-link" href="./projects.html">projects</a></li>
-              <li><a class="mobile__navbar-link" href="./contact.html">contact</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="full">
-          <nav class="full__navbar">
-            <ul>
-              <li><a class="full__navbar-link" href="./index.html">home</a></li>
-              <li><a class="full__navbar-link" href="./about.html">about</a></li>
-              <li><a class="full__navbar-link" href="./projects.html">projects</a></li>
-              <li><a class="full__navbar-link" href="./contact.html">contact</a></li>
-            </ul>
-          </nav>
-        </div>
+    </header>
+    <main class="title body__bg--glass">
+      <h1 class="appear">
+        ab<img
+          class="donut rotate"
+          src="./assets/yellow-donut.png"
+          alt="yellow donut"
+        />ut
+      </h1>
+    </main>
+    <div class="about body__bg--lionsgate">
+      <div class="about__content container">
+        <p>
+          I am a Vancouver&dash;based developer&period; I do front-end&comma;
+          and backend development&period; In addition to my passion for
+          coding&comma; I am also a nature lover&comma; a foodie&comma; a yoga
+          enthusiast and a lifelong learner&period;
+          <span class="pink">&num;LearningIsFun &num;InformationSponge</span>
+        </p>
+        <img src="./assets/anika-profile-img.jpeg" alt="anika" />
       </div>
     </div>
-  </header>
-  <main class="title body__bg--glass">
-    <h1 class="appear">ab<img class="donut rotate" src="./assets/yellow-donut.png" alt="yellow donut">ut</h1>
-  </main>
-  <script src="./scripts/mobileMenu.js"></script>
-</body>
+    <script src="./scripts/mobileMenu.js"></script>
+  </body>
 </html>

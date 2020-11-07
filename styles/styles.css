@@ -886,6 +886,93 @@ header {
   }
 }
 
+.about {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about__content {
+  height: 75vh;
+  background: rgba(255, 255, 255, 0.65);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+@media all and (min-width: 375px) {
+  .about__content {
+    font-size: 1.25rem;
+  }
+}
+
+@media all and (min-width: 750px) {
+  .about__content {
+    font-size: 1.75rem;
+    padding: 75px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .about__content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.about img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+@media all and (min-width: 750px) {
+  .about img {
+    width: 250px;
+  }
+}
+
+@media all and (min-width: 1000px) {
+  .about img {
+    width: 325px;
+  }
+}
+
+.about p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 150%;
+}
+
+@media screen and (min-width: 1440px) {
+  .about p {
+    width: 550px;
+  }
+}
+
 .projects {
   height: 100vh;
   display: -webkit-box;
@@ -918,7 +1005,7 @@ header {
 
 @media all and (min-width: 1000px) {
   .projects img {
-    width: 745px;
+    width: 700px;
   }
 }
 
@@ -998,21 +1085,9 @@ header {
   margin-bottom: 10px;
 }
 
-@media all and (min-width: 1000px) {
-  .projects h2 {
-    margin-bottom: 25px;
-  }
-}
-
 @media all and (min-width: 750px) {
   .projects-info {
     font-size: 1.5rem;
-  }
-}
-
-@media all and (min-width: 1000px) {
-  .projects-info {
-    font-size: 2rem;
   }
 }
 
