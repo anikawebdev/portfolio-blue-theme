@@ -343,7 +343,6 @@ template {
 
 html {
   margin: 0 auto;
-  height: 100%;
 }
 
 *,
@@ -362,7 +361,7 @@ body {
   color: #404040;
   width: 100%;
   text-rendering: optimizeLegibility;
-  height: 100%;
+  height: auto;
 }
 
 .body__bg--glass,
