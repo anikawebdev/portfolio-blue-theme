@@ -6,25 +6,32 @@
 }
 
 .projects img {
-  width: 55%;
+  // width: 55%;
+  width: 160px;
   height: auto;
+  margin-bottom: 15px;
 
   @include tablet {
-    width: 50%;
+    width: 225px;
+  }
+
+  @include tablet-larger-bp {
+    width: 300px;
   }
 
   @include desktop {
-    width: 45%;
+    width: 490px;
+    margin-bottom: 0;
   }
 }
 
 .carousel-cell {
   width: 95%;
   // padding: 10px;
-  height: 75vh;
+  height: 70vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   text-align: center;
 
@@ -54,14 +61,15 @@
 }
 
 .projects p {
-  width: 250px;
+  width: 240px;
+  height: auto;
 
   @include mobile-larger-bp {
     width: 300px;
   }
 
   @include tablet {
-    width: 450px;
+    width: 440px;
   }
 }
 
@@ -71,7 +79,7 @@
 
 .projects-info {
   @include tablet {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 }
 
