@@ -1,24 +1,20 @@
 .projects {
-  height: 100vh;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .projects img {
-  width: 200px;
+  width: 60%;
   height: auto;
 
-  @include mobile-larger-bp {
-    width: 250px;
-  }
-
   @include tablet {
-    width: 425px;
+    width: 55%;
   }
 
   @include tablet-larger-bp {
-    width: 700px;
+    width: 50%;
   }
 }
 
@@ -70,21 +66,13 @@
 }
 
 .projects h2 {
-  margin-bottom: 10px;
-
-  // @include tablet-larger-bp {
-  //   margin-bottom: 15px;
-  // }
+  margin-top: 10px;
 }
 
 .projects-info {
   @include tablet {
     font-size: 1.5rem;
   }
-
-  // @include tablet-larger-bp {
-  //   font-size: 2rem;
-  // }
 }
 
 .projects-info .github {
