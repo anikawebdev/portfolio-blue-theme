@@ -63,6 +63,28 @@
   @include mobile-larger-bp {
     width: 300px;
   }
+
+  @include tablet {
+    width: 450px;
+  }
+}
+
+.projects h2 {
+  margin-bottom: 10px;
+
+  @include tablet-larger-bp {
+    margin-bottom: 25px;
+  }
+}
+
+.projects-info {
+  @include tablet {
+    font-size: 1.5rem;
+  }
+
+  @include tablet-larger-bp {
+    font-size: 2rem;
+  }
 }
 
 .projects-info .github {
